@@ -26,6 +26,11 @@ So I sought out public data reported on a tour that has smaller player pools.  T
 
 Again these are all rough estimates.
 
+## Integrety 
+I don't want to casue drama.  What I decided to do is take the pool of names and assign them a PlayerID. I also created a TourID, EventID, and Event_Code to be able reference specific tours and events without naming them.  I don't have a desire to shame or make fun of anyone so I tried to keep the data as annonmous as possible.  
+
+
+
 
 
 
