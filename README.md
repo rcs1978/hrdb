@@ -13,6 +13,7 @@ Many years ago I guessed that you could probably make a database based off of re
 
 Now here is a small sample of those who cashed or made it into the money for the event.
 Now notice on the Day 1 chip counts the player named John Monnette had chips at the end of day 1
+
 ![day1payouts](https://github.com/rcs1978/hrdb/assets/152421676/7aea0821-ea38-4466-be23-fbc6676c9572)
 
 Now notice on the payout list for day 1 it shows that he indeed cashed at the end of the event.  Using this it was easy to create a list of players who played and if they cashed.
