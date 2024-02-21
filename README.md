@@ -31,6 +31,15 @@ Again, these are all rough estimates.
 ## Integrity
 I don't want to cause drama. What I decided to do is take the pool of names and assign them a PlayerID. I also created a TourID, EventID, and Event_Code to be able reference specific tours and events without naming them. I don't have a desire to shame or make fun of anyone, so I tried to keep the data as anonymous as possible.
 
+## How to
+At first I was just using the old copy and paste method into Excel.  I had my main tab filed out with the information about that event and I would copy paste the table from the PGT News website. In another tab I would copy paste the payout info into another tab.  I'd paste the names from the day 1 chip counts below the list of names of those who cashed.  Then I'd remove the duplicate names which would keep the names of those who cashed and delete their day 1 entry.  It would also keep the names of those on Day 1 who played and busted.  This process was tedius and long.  Eventually I learned how to create a Python script to that would do that work for me, cutting down my hours of copying and pasting.  I did use Power Querry in Excel, but it was still no where near as fast as making your own Python script.  
+
+Eventually it would give me an entry like this.
+
+![sample](https://github.com/rcs1978/hrdb/assets/152421676/6168af0e-86b0-4d81-a5f4-1d3c2737c266)
+
+
+
 
 
 
