@@ -1,35 +1,29 @@
-# hrdb
-# The High Stakes Tournament Poker Database
-You ever wonder who has made the most money from poker, who made the most money playing Pot Limit Omaha tournaments, and who is one of the best all tournament poker players on the high stakes scene. I set out to try and get a rough idea about the high stakes poker scene to get a rough estimate on the player pool, what events they enjoy the most, and what are some ROI for the average regular. Let's dive in.
+# HRDB: The High Stakes Tournament Poker Database
 
-## Gathering the data
-When it comes to openly publishing data, poker is different from many other games and sports. You'll easily find all sorts of Earning List and Amount Won all over the place, what you won't find is Buy_Ins minus Amount Won. It's a closely guarded stat that companies rarely ever publish. I can only think of two occasions where this has happened and the utter chaos and outrage it caused. No one wants to be known as the guy who lost 1.7 million dollars when their public profile shows they've won 11 million. Besides ego, a lot of players rely on backing/staking to help them get the entry fee for the event. A public list showing a player is losing money wouldn't help with them raising stakes. Because of these reasons the 'net' is kept secret from any stat on poker.
+Have you ever been curious about who the top earners in poker are, especially in high stakes tournaments or in games like Pot Limit Omaha? Wonder no more. The HRDB (High Stakes Tournament Poker Database) project is an ambitious endeavor aimed at shedding light on the elusive world of high stakes poker. It seeks to offer insights into the earnings, preferences, and overall performance of players in this competitive arena. Join me as we delve into the intricacies of the high stakes poker scene, exploring the player pool, preferred events, and the average return on investment for seasoned players.
 
-Curiosity though gets the best of me. I'm also curious on a bigger scale what percent of the pool of players is profitable. Not to mention I can also get a better idea of the size of these player pools and what games and buyin amounts they draw. This is how I did it.
+## Data Collection: Unveiling the Hidden World of Poker
 
+Poker, unlike many other sports and games, maintains a shroud of secrecy over certain data, particularly when it comes to net earnings (Buy-Ins minus Winnings). Such information is fiercely protected, with rare disclosures causing upheaval within the community. The reluctance stems from various reasons, including the preservation of professional reputations and the complexities of securing backing for tournament entries. In an industry where image and perceived success can influence one’s ability to compete, the true financial outcomes of players remain under wraps.
 
-## Scraping the news sites
-Many years ago, I guessed that you could probably make a database based from reported data on poker news sites. If you're a named pro you get reported about and people want to see if you survived day 1 and almost always, they report if you busted. With the WSOP, they have an app now that reports your chipstack for people at home. What I found is that they do a heck of a good job getting a good portion of the field reported on and if you're a famous or even on the fringe known poker player it is noted in the report 'Fun Fred - 123,000 Chips' or 'Bob the Pro - BUSTED'. If you take the list of all the players who played day1 (sometimes day2) and match it up with the public list of those who cashed. You could easily create a database showing what even a player played and if they cashed or busted out of it. This is straight from a poker news site reporting of day 1 chip counts during the 10k Seven Card Stud, notice some names have chips and others say busted.  
-![day1chipcounts](https://github.com/rcs1978/hrdb/assets/152421676/d2331ab3-590d-4d58-ad71-764d74dc5b08)
+Driven by an insatiable curiosity and a passion for the game, I embarked on a quest to uncover the veiled aspects of high stakes poker. My goal was not only to understand the profitability landscape but also to gauge the size and dynamics of the player pool across different games and buy-in levels.
 
-Now here is a small sample of those who cashed or made it into the money for the event.
-Now notice on the Day 1 chip counts the player named John Monnette had chips at the end of day 1
+## Methodology: From News to Numbers
 
-![day1payouts](https://github.com/rcs1978/hrdb/assets/152421676/7aea0821-ea38-4466-be23-fbc6676c9572)
+The breakthrough came from an unlikely source: poker news sites. These platforms, while covering the glitz and drama of tournaments, inadvertently provide pieces of a larger puzzle. By tracking reports on player performances, from Day 1 chip counts to final payouts, a database began to take shape. The process involved meticulously matching reported player appearances with official cashing lists, constructing a narrative of participation and success across various events.
 
-Now here is a small sample of those who cashed or made it into the money for the event. Now notice on Day 1 chip counts the player named John Monnette had chips at the end of day 1.
+One notable example is the WSOP app, which provides real-time updates on player stacks, offering a glimpse into the tournament's progression. By synthesizing this public data, I managed to compile a comprehensive database, capturing the journey of over 1,500 players in smaller-scale tours like the PGT, which proved to be an ideal data source due to its manageable player pool sizes.
 
-So, I sought out public data reported on a tour that has smaller player pools. The PGT was the perfect match, most of the time the average tournament only has 30-50 people playing so its the perfect size. In the end I got data on over 1500 individual players who have played these events since 2015.
+## Challenges and Considerations
 
+Despite the rich data, certain limitations persist. The inability to track re-entries and the opaque nature of tournament rakes present gaps in our understanding of true player profitability. These aspects, crucial to grasping the financial dynamics of poker tournaments, remain elusive due to the nature of the data available. Nevertheless, the database offers valuable insights, albeit with a degree of approximation.
 
-## Drawbacks
-1.	We don't know how many times a player has rebought into an event. The majority of these tournaments are reentry, meaning when a player busts, they can buy back in up until a certain level. When a tournament director post a number like 45 entries and after counting the reported chip counts and there are only 36 names, we can assume there were at least 8 reentries.  Sadly we don't know who and how many times. I have thought about adding a separate column dividing reported_entries by counted_entries which in this case would be 1.2 percent and using that as the rebought buyin total. But I left that alone.
-2.	We don't know the rake. The rake is how much is taken out of the entry fee to help pay admin costs. PGT often lets players who buy in early free rake, also we're not sure if they do rake the rebuy money. Rake can have a huge effect on a player’s net. I have thought about taking 10% off the buy in and trying to adjust payouts in one of the columns to help show the cause of rake. For now, I left everything alone
-Again, these are all rough estimates.
+## Ethical Considerations: Maintaining Anonymity
 
+In constructing this database, I was acutely aware of the potential for controversy and the sensitivity surrounding player earnings and reputations. To navigate these concerns, I adopted a system of anonymization, assigning unique identifiers to players, tours, and events. This approach ensures the integrity of the data while respecting the privacy and dignity of the individuals involved.
 
-## Integrity
-I don't want to cause drama. What I decided to do is take the pool of names and assign them a PlayerID. I also created a TourID, EventID, and Event_Code to be able reference specific tours and events without naming them. I don't have a desire to shame or make fun of anyone, so I tried to keep the data as anonymous as possible.
+The HRDB project is more than just a compilation of statistics; it's a window into the nuanced and often hidden world of high stakes poker. It serves as a resource for enthusiasts, analysts, and perhaps even players themselves, offering a new perspective on the game's competitive landscape.
+
 
 ## How to
 At first I was just using the old copy and paste method into Excel.  I had my main tab filed out with the information about that event, had my formuals set, and I would copy paste the table the final payouts from the [PGT News website](https://www.pgt.com/live-reporting/pokergo-cup-2024/event-1-5100-nolimit-holdem). In another tab I would copy paste the day 1 and sometimes day 2 chip counts info into another tab.  I'd paste the names from the days chip counts below the list of names of those who cashed.  Then I'd remove the duplicate names which would keep the names of those who cashed and delete their day 1 entry.  It would also keep the names of those on Day 1 who played and busted.  This process was tedius and long.  Eventually I learned how to create a Python script to that would do that work for me, cutting down my hours of copying and pasting.  I did use Power Querry in Excel, but it was still no where near as fast as making your own Python script.  
