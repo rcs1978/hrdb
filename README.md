@@ -92,6 +92,25 @@ average amount of events played by PlayerID and Average Buy In for those who pla
 
 ![avg_est_roi](https://github.com/rcs1978/hrdb/assets/152421676/9b1b1170-5231-468b-9705-b5a9d8c5f119)
 
+## Graphs
+
+Percent of those who are profitable
+
+![percentprofitable](https://github.com/rcs1978/hrdb/assets/152421676/0c4b3b64-b006-4bb2-8dec-2e174e2f830b)
+
+Estimate Average ROI of players who played 7 events or more
+
+![estroigraph](https://github.com/rcs1978/hrdb/assets/152421676/3c2ead80-3f1b-4cc3-b64b-1c00c91e5737)
+
+Estimate Average ROI plot of those who played 7 events or more
+
+![roiplot](https://github.com/rcs1978/hrdb/assets/152421676/75139704-1854-41ec-8c60-6894573f5c16)
+
+
+
+
+
+
 
 
 
