@@ -32,6 +32,96 @@ Eventually it would give me an entry like this.
 
 ![sample](https://github.com/rcs1978/hrdb/assets/152421676/6168af0e-86b0-4d81-a5f4-1d3c2737c266)
 
+## Entering into database
+After gathering years of data into Excel we imported that data into Microsoft SQL Serve Managment Studio.  Its the only SQL database program I have and can be a bit touchy to get data stored correctly but eventually we got these tables
+
+![table](https://github.com/rcs1978/hrdb/assets/152421676/b02d816a-34f6-4e20-9028-cd168405739a)
+
+## Running a few querrys
+
+Unique Player Count
+![playercount](https://github.com/rcs1978/hrdb/assets/152421676/c9d31ec3-b986-493a-8c69-c84615360c4e)
+
+How many poker series have run
+
+![seriescount](https://github.com/rcs1978/hrdb/assets/152421676/cca71de0-6311-470b-b149-3ad74b07684d)
+
+How many events have been played
+
+![eventsplayed](https://github.com/rcs1978/hrdb/assets/152421676/51c6f99c-b8de-44a2-9830-e8a506c55a32)
+
+List all the hosts and how many series and events it has hosted
+
+![hosts](https://github.com/rcs1978/hrdb/assets/152421676/4623d16b-6949-419d-bec8-f346013642c3)
+
+A list of games and how many times they've been played
+
+![games](https://github.com/rcs1978/hrdb/assets/152421676/72396276-835c-4b6b-8d72-9052a86acae9)
+
+How many events at the 8k-13k buy in level and how many average entries
+
+![10kentries](https://github.com/rcs1978/hrdb/assets/152421676/f3298a30-6a25-444e-b91d-2af0568b0be0)
+
+How many events at the 23k-27k buy in level and how many average entries
+
+![25kentries](https://github.com/rcs1978/hrdb/assets/152421676/17115c54-94ec-46c5-b597-b2c8c0ff82a4)
+
+--Avg Entries and the amount of PLO events played at the 8k-13 buy in
+
+![10kentries](https://github.com/rcs1978/hrdb/assets/152421676/59711923-e778-491f-8d98-6a00e7efa92c)
+
+--Avg Entries and the amount of PLO events played at the 23k-27k buy in
+
+![25kploentries](https://github.com/rcs1978/hrdb/assets/152421676/a19167a3-7ec9-4c4e-9429-dd1c27a77f42)
+
+How many mixed game events and average entries into those events
+
+![mixedgameentries](https://github.com/rcs1978/hrdb/assets/152421676/3aebd939-adbf-49f8-8320-50d5a1589b2a)
+
+Estimated ROI for those who have played at least 10 events or more
+
+![estROI](https://github.com/rcs1978/hrdb/assets/152421676/8cde5a8b-150f-4b0a-bf20-d576b8541dc7)
+![estROI_1](https://github.com/rcs1978/hrdb/assets/152421676/266ca037-184e-42b1-a1b0-b0b3ab67ae67)
+![estROI_2](https://github.com/rcs1978/hrdb/assets/152421676/ab5e1c06-0c42-4fda-ac20-089c40cfc477)
+
+average amount of events played by PlayerID and Average Buy In for those who played 7 Events
+
+![averageeventsbuyins](https://github.com/rcs1978/hrdb/assets/152421676/52db3236-524a-4075-9847-b4d6d4dc586f)
+
+--Avg Estimate ROI for those who played 7 events
+
+![avg_est_roi](https://github.com/rcs1978/hrdb/assets/152421676/9b1b1170-5231-468b-9705-b5a9d8c5f119)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
