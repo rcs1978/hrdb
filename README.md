@@ -40,6 +40,7 @@ After gathering years of data into Excel we imported that data into Microsoft SQ
 ## Running a few querrys
 
 Unique Player Count
+
 ![playercount](https://github.com/rcs1978/hrdb/assets/152421676/c9d31ec3-b986-493a-8c69-c84615360c4e)
 
 How many poker series have run
